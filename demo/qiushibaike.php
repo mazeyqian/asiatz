@@ -28,15 +28,15 @@ $configs = array(
         //'type' => 'csv',
         //'file' => PATH_DATA.'/qiushibaike.csv',
     //),
+    // 'export' => array(
+        // 'type'  => 'sql',
+        // 'file'  => PATH_DATA.'/qiushibaike.sql',
+        // 'table' => 'content',
+    // ),
     'export' => array(
-        'type'  => 'sql',
-        'file'  => PATH_DATA.'/qiushibaike.sql',
-        'table' => 'content',
-    ),
-    /*'export' => array(
         'type' => 'db', 
         'table' => 'spider',
-    ),*/
+    ),
     'fields' => array(
         array(
             'name' => "article_title",
