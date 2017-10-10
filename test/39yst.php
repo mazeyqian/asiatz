@@ -36,10 +36,10 @@ $configs = array(
         ),
         array(
             'name' => 'article_content',
-            /* 'selector_type' => 'regex',
-            'selector' => '#\s?39yst\s?body\s?start\s?(.*)\s?39yst\s?body\s?end\s?#i', */
+            'selector_type' => 'regex',
+            'selector' => '#\s?39yst\s?body\s?start\s?(.*)\s?39yst\s?body\s?end\s?#s',
             //'selector' => '#<h3>(.+)</h3>#i',
-            'selector' => "//div[@id='articleContent']",
+            /* 'selector' => "//div[@id='articleContent']", */
             'required' => true
         )
     )
