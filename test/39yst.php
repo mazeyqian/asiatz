@@ -37,7 +37,8 @@ $configs = array(
         array(
             'name' => 'article_content',
             'selector_type' => 'regex',
-            'selector' => '#\s?39yst\s?body\s?start\s?(.*)\s?39yst\s?body\s?end\s?#s',
+            //'selector' => '#<!--\s?39yst\s?body\s?start\s?-->(.*)<--\s?39yst\s?body\s?end\s?-->#s',
+            'selector' => '#<!--\s?39yst\s?body\s?start\s?-->(.*[\x{53d1}]+.*)<!--\s?39yst\s?body\s?end\s?-->#s',
             //'selector' => '#<h3>(.+)</h3>#i',
             /* 'selector' => "//div[@id='articleContent']", */
             'required' => true
