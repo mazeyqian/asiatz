@@ -15,12 +15,38 @@ $configs = array(
     'scan_urls' => array(
         'http://www.39yst.com'
     ),
-    'list_url_regexes' => array(
+    /* 'list_url_regexes' => array(
         'http://www.39yst.com/\w+/',
         'http://www.39yst.com/\w+/\w+/'
-    ),
+    ), */
     'content_url_regexes' => array(
         'http://www.39yst.com/\w+/.+\.shtml',
+    ),
+    'max_try' => 5,
+    'export' => array(
+        'type' => 'db',
+        'table' => '39yst-1'
+    ),
+    'fields' => array(
+        array(
+            'name' => 'article_title',
+            'selector_type' => 'regex',
+            'selector' => '#<h1\s?>(.+)</h1>#i',
+            'required' => true
+        ),
+        array(
+            'name' => 'article_content',
+            /* 'selector_type' => 'regex',
+            'selector' => '#\s?39yst\s?body\s?start\s?(.*)\s?39yst\s?body\s?end\s?#i', */
+            //'selector' => '#<h3>(.+)</h3>#i',
+            'selector' => "//div[@id='articleContent']",
+            'required' => true
+        )
     )
 
 );
+
+
+$spider = new phpspider($configs);
+
+$spider->start();
