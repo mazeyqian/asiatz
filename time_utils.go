@@ -1,5 +1,10 @@
 package asiatz
 
+import (
+	"fmt"
+	"strconv"
+)
+
 // ConvertShanghaiToUTC converts a Shanghai time string (HH:mm) to UTC time string (HH:mm).
 // For example, "08:00" in Shanghai is equivalent to "00:00" in UTC.
 func ConvertShanghaiToUTC(shanghaiTime string) (string, error) {
