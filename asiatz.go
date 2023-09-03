@@ -88,3 +88,7 @@ func JakartaToUTC(jakartaTime string) (string, error) {
 func BangkokToUTC(bangkokTime string) (string, error) {
 	return ToUTC(7, bangkokTime)
 }
+
+func PyongyangToUTC(pyongyangTime string) (string, error) {
+	return ToUTC(9, pyongyangTime)
+}

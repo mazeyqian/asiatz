@@ -43,6 +43,7 @@ Here is a list of supported time zones and their corresponding functions:
 | Delhi       | DelhiToUTC     |
 | Jakarta     | JakartaToUTC   |
 | Bangkok     | BangkokToUTC   |
+| Pyongyang   | PyongyangToUTC |
 
 The `ToUTC` function is a helper function used by the timezone conversion functions in the `time_utils.go` file. It takes two arguments: `offset` and `timeString`. 
 
