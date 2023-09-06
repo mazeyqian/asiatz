@@ -89,6 +89,8 @@ func BangkokToUTC(bangkokTime string) (string, error) {
 	return ToUTC(7, bangkokTime)
 }
 
+// PyongyangToUTC converts a Pyongyang time string (HH:mm) to UTC time string (HH:mm).
+// For example, "09:00" in Pyongyang is equivalent to "00:00" in UTC.
 func PyongyangToUTC(pyongyangTime string) (string, error) {
 	return ToUTC(9, pyongyangTime)
 }
