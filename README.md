@@ -6,7 +6,7 @@
 
 To use the asiatz package in your Go project, you can import it using the following command:
 
-```
+```shell
 go get github.com/mazeyqian/asiatz
 ```
 
@@ -45,7 +45,7 @@ Here is a list of supported time zones and their corresponding functions:
 | Bangkok     | BangkokToUTC   |
 | Pyongyang   | PyongyangToUTC |
 
-The `ToUTC` function is a helper function used by the timezone conversion functions in the `time_utils.go` file. It takes two arguments: `offset` and `timeString`. 
+The `ToUTC` function is a helper function used by the timezone conversion functions in the `time_utils.go` file. It takes two arguments: `offset` and `timeString`.
 
 The `offset` argument specifies the UTC offset for the given time zone. For example, the UTC offset for Shanghai is +8, so you would pass 8 as the `offset` argument when converting a Shanghai time string to UTC.
 
