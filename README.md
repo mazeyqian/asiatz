@@ -1,6 +1,6 @@
 # asiatz
 
-Asiatz is a Go package for converting timezones and other utilities, with a focus on Asia Time Zone. It provides functions to convert various time zones to UTC time.
+Asiatz is a Go library for converting timezones and other utilities, with a focus on Asia Time Zone. It provides functions to convert various time zones to UTC time.
 
 ## Installation
 
@@ -71,4 +71,4 @@ If you find a bug or have an idea for a new feature, please open an issue on the
 
 ## License
 
-This package is licensed under the MIT license. See the LICENSE file for more details.
+This library is licensed under the MIT license. See the LICENSE file for more details.
