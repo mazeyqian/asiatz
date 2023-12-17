@@ -11,9 +11,15 @@ func ToUTC(timezoneOffset float64, time string) (string, error) {
 	if err != nil {
 		return "", err
 	}
+	if hour < 0 || hour > 23 {
+		return "", fmt.Errorf("hour must be between 0 and 23")
+	}
 	minute, err := strconv.Atoi(time[3:])
 	if err != nil {
 		return "", err
+	}
+	if minute < 0 || minute > 59 {
+		return "", fmt.Errorf("minute must be between 0 and 59")
 	}
 	totalMinutes := hour*60 + minute
 	utcTotalMinutes := ((totalMinutes-int(timezoneOffset*60))%1440 + 1440) % 1440
